@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Geologi Expo 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="header-area">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">GEOLOGY EXPO</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="main-menu">
+                <a href="agenda.html" class="active">Agenda</a>
+                <a href="pendaftaran.html">Pendaftaran</a>
+                <a href="kampus.html">Kampus</a>
+                <a href="lomba-poster.html">Lomba Poster</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h2>Event Agenda</h2>
+            <p>Two days of exploration and insight</p>
+        </div>
+    </div>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section schedule-area">
+        <div class="container">
+            <div class="schedule-tab">
+                <button class="tab-btn active" onclick="openTab(event, 'day1')">Day 01 - 28 Feb</button>
+                <button class="tab-btn" onclick="openTab(event, 'day2')">Day 02 - 01 Mar</button>
+            </div>
+
+            <div id="day1" class="tab-content" style="display: block; max-width: 900px; margin: 0 auto;">
+                <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">08:00</span>
+                        <span style="font-size: 13px; color: #888;">11:00</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Tryout UTBK Nasional</h4>
+                        <p>Powered by BTA8 Jakarta. Simulasi riil UTBK SNBT 2026.</p>
+                        <span class="location" style="font-size: 12px; color: #aaa; margin-top: 5px; display: block;"><i class="fa fa-map-marker"></i> Online via Zoom</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">13:00</span>
+                        <span style="font-size: 13px; color: #888;">14:00</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Talkshow: Apa Itu Geologi?</h4>
+                        <p>Mengupas tuntas dunia kebumian bersama narasumber ahli.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">14:00</span>
+                        <span style="font-size: 13px; color: #888;">15:00</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Talkshow: Strategi Masuk PTN</h4>
+                        <p>Tips & Trik dan jalur masuk kampus impian.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="day2" class="tab-content" style="display: none; max-width: 900px; margin: 0 auto;">
+                <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">09:20</span>
+                        <span style="font-size: 13px; color: #888;">10:30</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Campus Fair: Regional</h4>
+                        <p>Presentasi dari UPN, UPER, UNSRI, UNHAS, dan UNIPA.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">13:10</span>
+                        <span style="font-size: 13px; color: #888;">14:10</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Campus Fair: National Icons</h4>
+                        <p>Presentasi dari ITB, UGM, dan Universias Indonesia.</p>
+                    </div>
+                </div>
+                 <div class="schedule-item">
+                    <div class="time-box">
+                        <span style="color: var(--color-primary); font-size: 18px;">14:40</span>
+                        <span style="font-size: 13px; color: #888;">15:00</span>
+                    </div>
+                    <div class="schedule-content">
+                        <h4>Awarding & Closing Ceremony</h4>
+                        <p>Pengumuman Pemenang Lomba Poster & Peraih Tryout Terbaik.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="pendaftaran.html" class="btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-widget">
+                <h4 style="color: #fff; margin-bottom: 20px;">Geologi Expo 2026</h4>
+                <p style="color: #888; max-width: 400px; margin-bottom: 20px;">
+                    Wadah edukasi dan eksplorasi bagi calon mahasiswa Teknik Geologi di seluruh Indonesia.
+                </p>
+                <div class="footer-social" style="display: flex; gap: 10px;">
+                    <a href="#" style="color: #fff;"><i class="fa fa-instagram"></i> Instagram</a>
+                    <a href="#" style="color: #fff;"><i class="fa fa-envelope"></i> Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-area">
+        <div class="container">
+            <p>Copyright &copy; 2026 Geologi Expo. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
