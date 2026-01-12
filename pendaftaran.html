@@ -8,22 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
     <!-- Header Area -->
     <header class="header-area">
         <div class="container nav-container">
-            <a href="index.html" class="logo">GEOLOGY EXPO</a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Geologi Expo" style="height: 40px; vertical-align: middle; margin-right: 5px;">
+                GEOLOGI EXPO
+            </a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <nav class="main-menu">
+                <a href="index.html">Beranda</a>
                 <a href="agenda.html">Agenda</a>
-                <a href="pendaftaran.html" class="active">Pendaftaran</a>
-                <a href="kampus.html">Kampus</a>
+                <a href="narasumber.html">Narasumber</a>
                 <a href="lomba-poster.html">Lomba Poster</a>
+                <a href="pendaftaran.html" class="btn nav-btn">DAFTAR</a>
             </nav>
         </div>
     </header>
@@ -39,29 +45,84 @@
     <!-- Pendaftaran Content -->
     <section class="section">
         <div class="container">
-            <div class="pricing-card" style="background: #fff; padding: 50px; border-radius: 10px; text-align: center; max-width: 600px; width: 100%; position: relative; overflow: hidden; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
-                <div style="background: var(--color-primary); color: #fff; padding: 5px 20px; position: absolute; top: 20px; right: -30px; transform: rotate(45deg); font-size: 12px; font-weight: 700; width: 120px;">BUNDLING</div>
+            <div class="pricing-card" style="background: #fff; padding: 50px; border-radius: 10px; text-align: center; max-width: 600px; width: 100%; position: relative; overflow: hidden; margin: 0 auto 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <div style="background: var(--color-primary); color: #fff; padding: 5px 20px; position: absolute; top: 20px; right: -30px; transform: rotate(45deg); font-size: 12px; font-weight: 700; width: 120px;">SALE</div>
                 <h4 style="font-size: 24px; margin-bottom: 10px;">Tiket Terusan</h4>
                 <p style="color: #888; margin-bottom: 20px;">Akses penuh ke seluruh rangkaian acara Geologi Expo 2026</p>
                 <div style="margin-bottom: 30px;">
-                    <span style="font-size: 56px; font-weight: 700; color: var(--color-primary);">20K</span>
+                    <span style="font-size: 48px; font-weight: 700; color: var(--color-primary);">Rp 20.000</span>
                     <span style="color: #888;">/ Peserta</span>
                 </div>
                 
-                    <li>Peluang Doorprize & Hadiah Juara</li>
+                <ul style="margin-bottom: 40px; text-align: left; padding-left: 20px; color: #666; display: inline-block;">
+                    <li style="margin-bottom: 10px;">✔  Full Access 2 Days Webinar</li>
+                    <li style="margin-bottom: 10px;">✔  Akun Tryout Premium BTA8</li>
+                    <li style="margin-bottom: 10px;">✔  E-Certificate Nasional</li>
+                    <li style="margin-bottom: 10px;">✔  Kesempatan Doorprize & Hadiah Juara</li>
                 </ul>
 
-                <a href="#" class="btn btn-primary" style="width: 100%;">DAFTAR SEKARANG</a>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-muted);">Pendaftaran ditutup 25 Februari 2026</p>
+                <br>
+                <!-- Countdown Timer in Registration Page -->
+                <div class="countdown-timer" style="justify-content: center; margin-bottom: 30px; display: flex; gap: 15px;">
+                    <div class="countdown-item" style="background: #f9f9f9; padding: 10px 15px; border-radius: 5px; min-width: 70px;">
+                        <span class="countdown-number" id="days" style="font-size: 24px; font-weight: 700; color: var(--color-primary); display: block;">00</span>
+                        <span class="countdown-label" style="font-size: 12px; color: #666;">Days</span>
+                    </div>
+                    <div class="countdown-item" style="background: #f9f9f9; padding: 10px 15px; border-radius: 5px; min-width: 70px;">
+                        <span class="countdown-number" id="hours" style="font-size: 24px; font-weight: 700; color: var(--color-primary); display: block;">00</span>
+                        <span class="countdown-label" style="font-size: 12px; color: #666;">Hours</span>
+                    </div>
+                    <div class="countdown-item" style="background: #f9f9f9; padding: 10px 15px; border-radius: 5px; min-width: 70px;">
+                        <span class="countdown-number" id="minutes" style="font-size: 24px; font-weight: 700; color: var(--color-primary); display: block;">00</span>
+                        <span class="countdown-label" style="font-size: 12px; color: #666;">Mins</span>
+                    </div>
+                    <div class="countdown-item" style="background: #f9f9f9; padding: 10px 15px; border-radius: 5px; min-width: 70px;">
+                        <span class="countdown-number" id="seconds" style="font-size: 24px; font-weight: 700; color: var(--color-primary); display: block;">00</span>
+                        <span class="countdown-label" style="font-size: 12px; color: #666;">Secs</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <!-- Google Forms SVG Icon (White) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                        <path d="M7 11h10v2H7zm0-4h10v2H7zm0 8h10v2H7zm-2 5V2h14v18H5z"/>
+                    </svg>
+                    DAFTAR SEKARANG
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">Pendaftaran ditutup 25 Februari 2026</p>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p class="copyright">&copy; 2026 Geologi Expo. All rights reserved.</p>
+            <div class="footer-widget">
+                <h4 style="color: #fff; margin-bottom: 20px;">Geologi Expo 2026</h4>
+                <p style="color: #888; max-width: 400px; margin-bottom: 20px;">
+                    Wadah edukasi dan eksplorasi bagi calon mahasiswa Teknik Geologi di seluruh Indonesia.
+                </p>
+                <div class="contact-info" style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 10px;">
+                        <i class="fa fa-envelope" style="color: var(--color-primary); width: 20px;"></i> 
+                        <a href="mailto:geologiexpo@gmail.com" style="color: #888;">geologiexpo@gmail.com</a>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+        <i class="fab fa-whatsapp" style="color: var(--color-primary); width: 20px;"></i>
+        <a href="https://wa.me/6282134104753" target="_blank" style="color: #888;">+62 821-3410-4753 (Regina)</a>
+    </div>
+    <div>
+        <i class="fab fa-instagram" style="color: var(--color-primary); width: 20px;"></i>
+        <a href="https://instagram.com/geologi.expo" target="_blank" style="color: #888;">@geologi.expo</a>
+    </div>                </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <div class="copyright-area">
+        <div class="container">
+            <p>Copyright &copy; 2026 Geologi Expo. Presented by PERHIMAGI. All rights reserved.</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

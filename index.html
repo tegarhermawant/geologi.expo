@@ -8,23 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
 
     <!-- Header Area -->
     <header class="header-area">
         <div class="container nav-container">
-            <a href="index.html" class="logo">GEOLOGY EXPO</a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Geologi Expo" style="height: 40px; vertical-align: middle; margin-right: 5px;">
+                GEOLOGI EXPO
+            </a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <nav class="main-menu">
+                <a href="index.html" class="active">Beranda</a>
                 <a href="agenda.html">Agenda</a>
-                <a href="pendaftaran.html">Pendaftaran</a>
-                <a href="kampus.html">Kampus</a>
+                <a href="narasumber.html">Narasumber</a>
                 <a href="lomba-poster.html">Lomba Poster</a>
+                <a href="pendaftaran.html" class="btn nav-btn">DAFTAR</a>
             </nav>
         </div>
     </header>
@@ -34,8 +40,19 @@
         <div class="container">
             <div class="hero-content">
                 <h1 style="color: var(--color-primary);">Discover The Earth<br>Design Your Future</h1>
-                <p style="font-size: 18px; margin-bottom: 40px; max-width: 600px;">Bergabunglah dalam eksplorasi kebumian terbesar tahun ini. Persiapkan dirimu untuk masa depan yang gemilang.</p>
+                <p style="font-size: 18px; margin-bottom: 20px; max-width: 600px;">Bergabunglah dalam eksplorasi kebumian terbesar tahun ini. Persiapkan dirimu untuk masa depan yang gemilang.</p>
                 
+                <div style="margin-bottom: 40px; color: #fff; display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fa fa-calendar" style="color: var(--color-primary);"></i>
+                        <span>28 Februrari - 1 Maret 2026</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fa fa-map-marker" style="color: var(--color-primary);"></i>
+                        <span>Live on Zoom Meeting</span>
+                    </div>
+                </div>
+
                 <a href="pendaftaran.html" class="btn">Get Tickets</a>
             </div>
         </div>
@@ -84,18 +101,21 @@
                 <!-- Single Speaker Item -->
                 <div class="speaker-item" style="flex: 0 0 300px; background: #fff; padding: 30px; text-align: center; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="speaker-img" style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px;"></div>
-                    <h4>ITB</h4>
-                    <span style="color: var(--color-primary); font-size: 14px; text-transform: uppercase;">Institut Teknologi Bandung</span>
+                    <h4 style="margin-bottom: 5px;">Coming Soon</h4>
+                    <p style="color: var(--color-primary); font-weight: 500; font-size: 14px; margin-bottom: 5px;">ITB</p>
+                    <span style="color: #666; font-size: 14px; text-transform: uppercase;">Institut Teknologi Bandung</span>
                 </div>
                 <div class="speaker-item" style="flex: 0 0 300px; background: #fff; padding: 30px; text-align: center; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="speaker-img" style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px;"></div>
-                    <h4>UGM</h4>
-                    <span style="color: var(--color-primary); font-size: 14px; text-transform: uppercase;">Universitas Gadjah Mada</span>
+                    <h4 style="margin-bottom: 5px;">Coming Soon</h4>
+                    <p style="color: var(--color-primary); font-weight: 500; font-size: 14px; margin-bottom: 5px;">UGM</p>
+                    <span style="color: #666; font-size: 14px; text-transform: uppercase;">Universitas Gadjah Mada</span>
                 </div>
                 <div class="speaker-item" style="flex: 0 0 300px; background: #fff; padding: 30px; text-align: center; border-radius: 5px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="speaker-img" style="width: 150px; height: 150px; background: #ddd; border-radius: 50%; margin: 0 auto 20px;"></div>
-                    <h4>UI</h4>
-                    <span style="color: var(--color-primary); font-size: 14px; text-transform: uppercase;">Universitas Indonesia</span>
+                    <h4 style="margin-bottom: 5px;">Coming Soon</h4>
+                    <p style="color: var(--color-primary); font-weight: 500; font-size: 14px; margin-bottom: 5px;">UI</p>
+                    <span style="color: #666; font-size: 14px; text-transform: uppercase;">Universitas Indonesia</span>
                 </div>
             </div>
             
@@ -152,14 +172,14 @@
             <div class="pricing-container" style="display: flex; justify-content: center; margin-top: 50px;">
                 <div class="pricing-card" style="background: #fff; padding: 50px; border-radius: 10px; text-align: center; max-width: 400px; width: 100%; position: relative; overflow: hidden;">
                     <div style="background: var(--color-primary); color: #fff; padding: 5px 20px; position: absolute; top: 20px; right: -30px; transform: rotate(45deg); font-size: 12px; font-weight: 700; width: 120px;">BEST VALUE</div>
-                    <h4 style="font-size: 24px; margin-bottom: 20px;">Tiket Terusan</h4>
+                    <h4 style="font-size: 24px; margin-bottom: 20px;">Tiket</h4>
                     <div style="margin-bottom: 30px;">
                         <span style="font-size: 48px; font-weight: 700; color: var(--color-primary);">20K</span>
                         <span style="color: #888;">/ Peserta</span>
                     </div>
                     <ul style="margin-bottom: 40px; text-align: left; padding-left: 20px; color: #666;">
-                        <li style="margin-bottom: 10px;">✔  Full Access 2 Days Webinar</li>
-                        <li style="margin-bottom: 10px;">✔  Akun Tryout Premium BTA8</li>
+                        <li style="margin-bottom: 10px;">✔  2 Hari Expo dan Seminar</li>
+                        <li style="margin-bottom: 10px;">✔  Tryout SNBT</li>
                         <li style="margin-bottom: 10px;">✔  E-Certificate Nasional</li>
                         <li style="margin-bottom: 10px;">✔  Kesempatan Doorprize</li>
                     </ul>
@@ -203,15 +223,28 @@
                 <p style="color: #888; max-width: 400px; margin-bottom: 20px;">
                     Wadah edukasi dan eksplorasi bagi calon mahasiswa Teknik Geologi di seluruh Indonesia.
                 </p>
-                <div class="footer-social" style="display: flex; gap: 10px;">
-                    <a href="#" style="color: #fff;"><i class="fa fa-instagram"></i> Instagram</a>
-                    <a href="#" style="color: #fff;"><i class="fa fa-envelope"></i> Email</a>
+                <div class="contact-info" style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 10px;">
+                        <i class="fa fa-envelope" style="color: var(--color-primary); width: 20px;"></i> 
+                        <a href="mailto:geologiexpo@gmail.com" style="color: #888;">geologiexpo@gmail.com</a>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+        <i class="fab fa-whatsapp" style="color: var(--color-primary); width: 20px;"></i>
+        <a href="https://wa.me/6282134104753" target="_blank" style="color: #888;">+62 821-3410-4753 (Regina)</a>
+    </div>
+    <div>
+        <i class="fab fa-instagram" style="color: var(--color-primary); width: 20px;"></i>
+        <a href="https://instagram.com/geologi.expo" target="_blank" style="color: #888;">@geologi.expo</a>
+    </div>                </div>
                 </div>
             </div>
         </div>
     </footer>
     <div class="copyright-area">
         <div class="container">
-            <p>Copyright &copy; 2026 Geologi Expo. All rights reserved.</p>
+            <p>Copyright &copy; 2026 Geologi Expo. Presented by PERHIMAGI. All rights reserved.</p>
         </div>
     </div>
+    <script src="script.js"></script>
+</body>
+</html>

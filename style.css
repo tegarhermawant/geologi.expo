@@ -147,6 +147,7 @@ ul {
 .main-menu {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .main-menu a {
@@ -436,6 +437,16 @@ footer {
 /* Hide hamburger for desktop, show for mobile */
 .hamburger {
     display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -492,5 +503,17 @@ footer {
         padding-bottom: 15px;
         margin-bottom: 15px;
         width: 100%;
+    }
+
+    /* Fix About Section on Mobile */
+    .about-area .row {
+        flex-direction: column;
+    }
+
+    .about-area .col-lg-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding-right: 0 !important;
+        margin-bottom: 30px;
     }
 }
