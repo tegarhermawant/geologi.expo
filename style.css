@@ -369,12 +369,28 @@ ul {
 
 .schedule-item {
     background: #fff;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     border-radius: 5px;
     transition: 0.3s;
+}
+
+
+
+/* Highlighted Agenda Items */
+.schedule-item.highlight-item {
+    padding: 30px;
+    border-left: 5px solid var(--color-primary);
+    background: #fffafa;
+    /* Very light pink/white tint */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-item.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .schedule-item:hover {
