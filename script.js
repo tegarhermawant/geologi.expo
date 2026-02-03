@@ -36,12 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const textMinute = Math.floor((gap % hour) / minute);
         const textSecond = Math.floor((gap % minute) / second);
 
+        // Update ID-based elements (Legacy)
         if (document.getElementById('days')) {
             document.getElementById('days').innerText = String(textDay).padStart(2, '0');
             document.getElementById('hours').innerText = String(textHour).padStart(2, '0');
             document.getElementById('minutes').innerText = String(textMinute).padStart(2, '0');
             document.getElementById('seconds').innerText = String(textSecond).padStart(2, '0');
         }
+
+        // Update Class-based elements (For multiple instances)
+        document.querySelectorAll('.countdown-days').forEach(el => el.innerText = String(textDay).padStart(2, '0'));
+        document.querySelectorAll('.countdown-hours').forEach(el => el.innerText = String(textHour).padStart(2, '0'));
+        document.querySelectorAll('.countdown-minutes').forEach(el => el.innerText = String(textMinute).padStart(2, '0'));
+        document.querySelectorAll('.countdown-seconds').forEach(el => el.innerText = String(textSecond).padStart(2, '0'));
     };
 
     setInterval(updateCountdown, 1000);
